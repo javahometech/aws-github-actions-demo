@@ -32,3 +32,8 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run test cases
+        script: echo running test cases
