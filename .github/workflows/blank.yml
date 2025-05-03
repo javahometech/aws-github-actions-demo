@@ -9,4 +9,4 @@ jobs:
       GLOBAL_APP_ENV: prod
     steps:
       - name: Linting the code
-        run: echo ${{ env.GLOBAL_APP_ENV }}
+        run: echo ${{ secrets.MY_NAME }}
