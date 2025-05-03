@@ -1,23 +1,8 @@
-name: Check AWS Access
-
-on:
-  workflow_dispatch:
-permissions:
-  id-token: write 
+name: Hello World Workflow
+on: workflow_dispatch
 jobs:
-  check-access:
+  welcome:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-      
-    - name: configure aws credentials
-      uses: aws-actions/configure-aws-credentials@v3
-      with:
-        role-to-assume: arn:aws:iam::637423418480:role/github-actions-openid-demo
-        role-session-name: githubactions
-        aws-region: "us-east-1"
-
-    - name: Verify AWS credentials
-      run: aws sts get-caller-identity
+      - name: Welcome to GHA
+        run: echo Welcome to GitHub Actions!
