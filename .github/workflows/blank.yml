@@ -9,5 +9,5 @@ jobs:
       matrix:
         names: ["Hari","Pavi"]
     steps:
-      - name: Print {{matrix.names}}
-        run: "echo name is {{matrix.names}}"
+      - name: Print ${{matrix.names}}
+        run: "echo name is ${{matrix.names}}"
