@@ -6,3 +6,7 @@ jobs:
     uses: ./.github/workflows/use-me.yaml
     with:
       name: Java Home Cloud Production from main
+  demo2:
+    uses: ./.github/workflows/use-me.yaml
+    with:
+      name: Srinu
