@@ -1,5 +1,10 @@
 name: Hello World Workflow
-on: push
+on: 
+  push:
+    branches:
+      - main
+    paths:
+      - src/*
 jobs:
   welcome:
     runs-on: ubuntu-latest
