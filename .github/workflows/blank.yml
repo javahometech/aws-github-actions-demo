@@ -4,4 +4,4 @@ on:
 
 jobs:
   demo:
-    uses: ./use-me.yaml
+    uses: ./.github/workflows/use-me.yaml
