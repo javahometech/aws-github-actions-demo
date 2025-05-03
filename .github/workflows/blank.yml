@@ -1,15 +1,12 @@
 name: Hello World Workflow
 on: 
   workflow_dispatch:
-  push:
-    branches:
-      - main
-    paths:
-      - src/*.txt
 
 jobs:
   lint:
     runs-on: ubuntu-latest
+    env:
+      GLOBAL_APP_ENV: prod
     steps:
       - name: Linting the code
-        run: echo ${{runner.os}}
+        run: echo ${{ env.GLOBAL_APP_ENV }}
