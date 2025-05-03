@@ -1,7 +1,13 @@
 name: Util Job
-on: workflow_call
+on: 
+    workflow_call:
+        inputs:
+            name:
+                required: true
+                type: string
+
 jobs:
     hello:
         runs-on: ubuntu-latest
         steps:
-            - run: echo This is workflow
+            - run: echo this is workflow with name ${{inputs.name}}

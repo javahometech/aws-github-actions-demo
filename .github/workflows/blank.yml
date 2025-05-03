@@ -5,3 +5,5 @@ on:
 jobs:
   demo:
     uses: ./.github/workflows/use-me.yaml
+    with:
+      name: Java Home Cloue
