@@ -1,13 +1,16 @@
-name: Util Job
-on: 
+name: I am Reusable Workflow
+
+on:
     workflow_call:
         inputs:
             name:
                 required: true
                 type: string
-
 jobs:
-    hello:
+    greeting:
         runs-on: ubuntu-latest
         steps:
-            - run: echo this is workflow with name ${{inputs.name}}
+            - name: Greeting
+              run: |
+                echo Hello ${{ inputs.name }} Good evening!!
+                echo Welcome to Chai Point!!!
