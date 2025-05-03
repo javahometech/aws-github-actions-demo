@@ -1,5 +1,12 @@
 name: Hello World Workflow
-on: workflow_dispatch
+on: 
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - src/*.txt
+
 jobs:
   lint:
     runs-on: ubuntu-latest
