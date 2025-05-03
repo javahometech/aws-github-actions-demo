@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Welcome to GHA
         run: echo Welcome to GitHub Actions!
-      - name: Welcome multi line run
+      - name: Welcome multi line run to test
         run: |
             echo Welcome one
             echo Welcome two
