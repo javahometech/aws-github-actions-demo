@@ -7,6 +7,6 @@ jobs:
       - name: Welcome to GHA
         run: echo Welcome to GitHub Actions!
       - name: Welcome multi line run
-      run: |
-          echo Welcome one
-          echo Welcome two
+        run: |
+            echo Welcome one
+            echo Welcome two
