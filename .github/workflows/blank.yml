@@ -4,11 +4,13 @@ on:
     branches:
       - main
 jobs:
-  welcome:
+  lint:
     runs-on: ubuntu-latest
     steps:
-      - name: Welcome to GHA
-        run: echo Welcome to GitHub Actions!
-      - name: Welcome multi line run to test
-        run: |
-            echo Welcome one
+      - name: Linting the code
+        run: echo Linting the code
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Testing the App
+        run: echo running test cases!
