@@ -5,4 +5,4 @@ jobs:
   demo:
     uses: ./.github/workflows/use-me.yaml
     with:
-      name: Java Home Cloud
+      name: Java Home Cloud Production
