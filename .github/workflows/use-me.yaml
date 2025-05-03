@@ -15,4 +15,4 @@ jobs:
             - name: Greeting
               run: |
                 echo Hello ${{ inputs.name }} Good evening!!
-                echo Welcome to Chai Point!!!
+                echo Welcome to production Chai Point!!!
