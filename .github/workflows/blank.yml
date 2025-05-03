@@ -5,8 +5,9 @@ on:
 jobs:
   lint:
     runs-on: ubuntu-latest
-    env:
-      GLOBAL_APP_ENV: prod
+    strategy:
+      matrix:
+        names: ["Hari","Pavi"]
     steps:
-      - name: Linting the code
-        run: echo ${{ vars.MY_NAME }}
+      - name: Print {{matrix.names}}
+        run: "echo name is {{matrix.names}}"
