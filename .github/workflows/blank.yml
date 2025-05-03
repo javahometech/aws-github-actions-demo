@@ -12,4 +12,3 @@ jobs:
       - name: Welcome multi line run to test
         run: |
             echo Welcome one
-            echo Welcome two
