@@ -1,13 +1,15 @@
 name: Hello World Workflow
-on: push
+on: 
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Environment to run tests against'
+        type: environment
+        required: true
 
 jobs:
-  demo:
-    uses: ./.github/workflows/use-me.yaml
-    with:
-      name: Java Home Cloud Production from main
-  demo2:
-    needs: demo
-    uses: ./.github/workflows/use-me.yaml
-    with:
-      name: Srinu
+  demo_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Welcome task
+        run: echo welcome
